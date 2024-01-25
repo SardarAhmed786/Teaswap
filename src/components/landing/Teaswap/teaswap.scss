@@ -1,0 +1,102 @@
+.tea {
+    padding: 80px 0px;
+    position: relative;
+
+    .leftimg {
+        position: absolute;
+
+        right: 0px;
+    }
+
+    .rightimg {
+        position: absolute;
+        top: -220px;
+        left: 0px;
+    }
+
+    .maincard {
+        border-radius: 25px;
+        border: 1px solid #FFF;
+
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.00) 100%);
+
+        box-shadow: 0px -66px 60px -30px rgba(244, 0, 128, 0.07);
+        backdrop-filter: blur(5px);
+        padding: 50px;
+        max-width: 1200px;
+        width: 100%;
+
+        .upperparent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            p {
+                color: #9A999F;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+                text-transform: uppercase;
+            }
+
+            h4 {
+                color: #FFF;
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+            }
+
+            button {
+                border-radius: 30px;
+                background: rgba(4, 193, 130, 0.05);
+                padding: 8px 10px;
+                color: #04C182;
+
+                font-family: "Mona Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 2px;
+            }
+        }
+
+        .parenttext {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            margin: 50px 0px;
+           
+        
+            .mainheading {
+             
+          
+                p {
+                    color: #9A999F;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                    text-transform: uppercase;
+                }
+
+                h4 {
+                    color: #FFF;
+                    margin-top: 10px;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.mainbanner {
+  padding-top: 127px;
+  position: relative;
+.bottom{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+  .right {
+    border-radius: 750px;
+    background: rgba(244, 0, 128, 0.22);
+    filter: blur(325px);
+
+  }
+
+  .bannerimg {
+    position: absolute;
+    top: 68%;
+    right: 50%;
+    width: 1000px;
+    height: 531px;
+    transform: translate(50%, -50%);
+
+  }
+
+  .mainparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .topbtn {
+      border-radius: 45px;
+      background: rgba(244, 0, 128, 0.10);
+      padding: 10px 20px;
+      color: #F40080;
+      text-align: center;
+      font-family: "Mona Sans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: 1.2px;
+      border: none;
+
+
+
+
+    }
+
+    .heading {
+      color: #FFF !important;
+      margin-top: 22px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-family: "Mona Sans";
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      /* 72px */
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #A09BB6;
+      margin-bottom: 50px;
+      text-align: center;
+      font-family: Manrope;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+
+    .start {
+      border-radius: 12px;
+      background: linear-gradient(259deg, #F40080 -2.61%, #F00585 -0.52%, #DD24A4 17.29%, #CE3CBC 35.1%, #C44DCD 53.96%, #BE57D7 73.87%, #BC5BDB 99.01%);
+      box-shadow: 0px 19px 30px -20px rgba(221, 37, 165, 0.80);
+      padding: 18px 60px;
+      max-width: 228px;
+      width: 100%;
+    }
+  }
+}

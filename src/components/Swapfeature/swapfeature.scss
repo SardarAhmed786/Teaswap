@@ -1,0 +1,74 @@
+.swapfeature {
+    padding: 80px 0px;
+
+    .mainfeaturehead {
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        p {
+            color: #9A999F;
+            margin-top: 10px;
+            text-align: center;
+            font-family: "Mona Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            max-width: 426px;
+            width: 100%;
+        }
+    }
+
+    .parentcard {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .innercard {
+            border-radius: 25px;
+            border: 1px solid #FFF;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(35px);
+            padding: 50px 40px;
+            width: 100%;
+            border: none;
+            height: 385px;
+
+            &:hover {
+                border-radius: 25px;
+                border: 1px solid #F40080;
+
+                background: rgba(255, 255, 255, 0.03);
+                padding: 50px 40px;
+                box-shadow: 0px 0px 40px 0px rgba(244, 0, 128, 0.25) inset;
+                backdrop-filter: blur(35px);
+            }
+
+            .maincontent {
+                h3 {
+                    color: #FFF;
+                    margin-top: 40px;
+                    margin-bottom: 15px;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+}
