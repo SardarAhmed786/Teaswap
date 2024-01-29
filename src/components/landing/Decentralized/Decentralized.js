@@ -11,7 +11,7 @@ const Decentralized = () => {
 
                         <div className='maindecentralizedleft'>
                             <Spline
-                                scene="https://my.spline.design/untitled-e94f1ea327994c84a21f5ed1aef15a81/"
+                                scene="https://prod.spline.design/V8Jy8gzjhd4vzkLv/scene.splinecode"
                             />
                         </div>
                         <div className='maindecentralizedright'>
