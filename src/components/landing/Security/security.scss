@@ -68,6 +68,23 @@
                 border: none;
                 outline: none;
                 margin-top: 40px;
+                background-size: 400% 400%;
+                animation: moveGradient 2s linear infinite;
+              }
+          
+              @keyframes moveGradient {
+                0% {
+                  background-position: 0% 50%;
+                }
+          
+                50% {
+                  background-position: 100% 50%;
+                }
+          
+                100% {
+                  background-position: 0% 50%;
+                }
+              
             }
         }
     }

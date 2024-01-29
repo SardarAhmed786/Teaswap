@@ -2,39 +2,47 @@
   font-family: m100;
   src: url(../src/Font/Mona-Sans-UltraLight.ttf);
 }
+
 @font-face {
   font-family: m200;
   src: url(../src/Font/Mona-Sans-Light.ttf);
 }
+
 @font-face {
   font-family: m400;
   src: url(../src/Font/Mona-Sans-Medium.ttf);
 }
+
 @font-face {
   font-family: m300;
   src: url(../src/Font/Mona-Sans-Regular.ttf);
 }
+
 @font-face {
   font-family: m500;
   src: url(../src/Font/Mona-Sans-SemiBold.ttf);
 }
+
 @font-face {
   font-family: m600;
   src: url(../src/Font/Mona-Sans-Bold.ttf);
 }
+
 @font-face {
   font-family: m700;
   src: url(../src/Font/Mona-Sans-ExtraBold.ttf);
 }
+
 @font-face {
   font-family: m800;
   src: url(../src/Font/Mona-Sans-Black.ttf);
 }
+
 html {
   scroll-behavior: smooth;
 }
 
-.mainlandang{
+.mainlandang {
   overflow: hidden;
 }
 
@@ -50,6 +58,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .row {
   margin: 0;
   padding: 0;
@@ -199,7 +208,8 @@ h6 {
   .xs-0 {
     padding: 0px;
   }
-  .padd-sm{
+
+  .padd-sm {
     padding: 0 !important;
   }
 }
@@ -231,6 +241,7 @@ button {
   h2 {
     font-size: 30px !important;
   }
+
   .col-md-6 {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -299,4 +310,18 @@ button.close {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-circle {
+  animation: rotate infinite linear 4s;
 }

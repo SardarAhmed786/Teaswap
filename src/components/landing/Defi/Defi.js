@@ -4,7 +4,7 @@ import './defi.scss'
 const Defi = () => {
   return (
     <div className="custom-container">
-        <div className="defi">
+        <div className='defi wow animate__animated animate__fadeInUp' data-wow-duration="1s" data-wow-delay="1s">
             <div className="defileft">
                 <h3 className="defihead">Start your DeFi journey on Tomichain with TeaSwa.</h3>
                 <p className="defipara">At laborum dolorem qui mollitia consequuntur non laudantium aspernatur aut sint voluptas et vitae nesciunt ea repellendus veritatis sit quibusdam omnis! Vel asperiores ullam aut numquam porro vel debitis aspernatur est dignissimos velit.</p>

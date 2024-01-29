@@ -53,6 +53,11 @@
             font-weight: 400;
             line-height: 120%;
             padding: 0px;
+
+            &:hover{
+              color: #F40080;
+              transition: 0.7s;
+            }
           }
         }
       }

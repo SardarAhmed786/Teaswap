@@ -6,12 +6,12 @@ const Tokenism = () => {
             <section className='tokenism' id="tokenomics">
                 <span className="leftshadetokenism"></span>
                 <div className='custom-container'>
-                    <div className='mainheading'>
+                    <div className='mainheading wow animate__animated animate__fadeIn' data-wow-duration="1s" data-wow-delay="1s">
                         <h3>Tokenomics at a Glance</h3>
                         <p>At vero eos et accusamus et iEvoluptatum deleniti atque corrupti quos dolores.</p>
                     </div>
                     <div className='parentcardsss'>
-                        <div className='left'>
+                        <div className='left wow animate__animated animate__fadeInLeft' data-wow-duration="1s" data-wow-delay="1s">
                             <div className='card'>
                                 <h2 className='upperhead'>About Token</h2>
                                 <div className='parenttext'>
@@ -45,7 +45,7 @@ const Tokenism = () => {
                             </div>
 
                         </div>
-                        <div className='right'>
+                        <div className='right wow animate__animated animate__fadeInRight' data-wow-duration="1s" data-wow-delay="1s">
                             <div className='card'>
                                 <div className='innerleft'>
                                     <img src='\assets\donut.svg' alt='img' className='img-fluid donut' />

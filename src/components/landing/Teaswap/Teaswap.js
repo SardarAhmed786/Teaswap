@@ -10,7 +10,7 @@ const Teaswap = () => {
                 <span className="rightshadetea"></span>
                 <span className="extrashaderight"></span>
                 <div className='custom-container'>
-                    <div className='maincard'>
+                    <div className='maincard wow animate__animated animate__fadeInUp' data-wow-duration="1s" data-wow-delay="1s">
                         <div className='upperparent'>
                             <p>TEA Price</p>
                             <h4>$1.6775</h4>

@@ -109,7 +109,6 @@
 
     .start {
       border-radius: 12px;
-      background: linear-gradient(259deg, #F40080 -2.61%, #F00585 -0.52%, #DD24A4 17.29%, #CE3CBC 35.1%, #C44DCD 53.96%, #BE57D7 73.87%, #BC5BDB 99.01%);
       box-shadow: 0px 19px 30px -20px rgba(221, 37, 165, 0.80);
       display: flex;
       padding: 18px 60px;
@@ -123,30 +122,53 @@
       text-transform: uppercase;
       border: none;
       outline: none;
+      background: linear-gradient(259deg, #F40080 -2.61%, #F00585 -0.52%, #DD24A4 17.29%, #CE3CBC 35.1%, #C44DCD 53.96%, #BE57D7 73.87%, #BC5BDB 99.01%);
+      background-size: 400% 400%;
+      animation: moveGradient 2s linear infinite;
     }
+
+    @keyframes moveGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
   }
 }
 
-@media (max-width:600px){
-  .mainbanner{
+@media (max-width:600px) {
+  .mainbanner {
     padding: 50px 0px;
   }
-  .mainbanner .mainparent .heading{
+
+  .mainbanner .mainparent .heading {
     font-size: 24px !important;
   }
-  .mainbanner .mainparent p{
+
+  .mainbanner .mainparent p {
     font-size: 16px;
   }
-  .mainbanner .mainparent .start{
+
+  .mainbanner .mainparent .start {
     width: 100%;
   }
-  .mainbanner .bottom{
+
+  .mainbanner .bottom {
     max-width: 200px;
     height: 200px;
     right: -100px;
     top: 300px;
   }
-  .mainbanner .bannerimg{
+
+  .mainbanner .bannerimg {
     height: unset !important;
   }
 }

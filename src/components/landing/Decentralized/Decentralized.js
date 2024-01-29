@@ -1,18 +1,22 @@
 import React from 'react'
 import "./decentralized.scss"
+import Spline from "@splinetool/react-spline";
 const Decentralized = () => {
     return (
         <>
+
             <section className='decentralized' id="about">
                 <div className='custom-container'>
                     <div className='maindecentralized'>
+
                         <div className='maindecentralizedleft'>
-                            <span className="decentralizedshade"></span>
-                            <img src="\assets\decentralized.svg" alt="decentralizedimg" className="decentralizedimg" />
+                            <Spline
+                                scene="https://my.spline.design/untitled-e94f1ea327994c84a21f5ed1aef15a81/"
+                            />
                         </div>
                         <div className='maindecentralizedright'>
-                            <button className='topbtn'>About TeaSwap</button>
-                            <div className='heading'>
+                            <button className="topbtn wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="1s">About TeaSwap</button>
+                            <div className='heading wow animate__animated animate__bounceInRight' data-wow-duration="1s" data-wow-delay="1s">
                                 <h3>Fully decentralized. Completely secure.</h3>
                                 <p>At laborum dolorem qui mollitia consequuntur non laudantium aspernatur aut sint voluptas et vitae nesciunt ea repellendus veritatis sit quibusdam omnis! Vel asperiores ullam aut numquam porro vel debitis aspernatur est dignissimos velit.
                                 </p>

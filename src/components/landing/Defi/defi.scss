@@ -47,7 +47,14 @@
             font-style: normal;
             line-height: normal;
             text-transform: uppercase;
-            border: none;
+            border: 1px solid transparent;
+
+            &:hover{
+                background: transparent;
+                border: 1px solid #F40080;
+                color: #000;
+                transition: 0.7s;
+            }
         }
     }
 }

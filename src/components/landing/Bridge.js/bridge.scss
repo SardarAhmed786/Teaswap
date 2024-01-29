@@ -60,6 +60,11 @@
                 font-style: normal;
                 line-height: normal;
                 text-transform: uppercase;
+
+                &:hover{
+                    background: rgba(244, 0, 128, 0.20);
+                    transition: 0.7s;
+                }
             }
         }
     }

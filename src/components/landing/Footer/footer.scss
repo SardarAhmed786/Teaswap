@@ -20,6 +20,11 @@
                 font-style: normal;
                 line-height: 120%;
                 text-decoration: none !important;
+
+                &:hover{
+                  color: #F40080;
+                  transition: 0.7s;
+                }
             }
         }
 

@@ -13,11 +13,14 @@ import Bridge from './Bridge.js/Bridge';
 import Partners from './Partners/Partners';
 import Defi from './Defi/Defi';
 import News from './News/News';
+import WOW from "wowjs";
 
 function Landing() {
-  useEffect(() => {
+  useEffect (() => {
+    const wow = new WOW.WOW();
+    wow.init();
     window.scrollTo(0, 0)
-  }, [])
+  },[])
 
   return (
     <>

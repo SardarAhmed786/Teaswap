@@ -5,8 +5,9 @@ const News = () => {
     return (
         <section className="newsmain">
             <div className="custom-container">
+                <h3 className='newsheadermain wow animate__animated animate__fadeIn' data-wow-duration="1s" data-wow-delay="1s">News & Updates</h3>
                 <div className="innernews">
-                    <div className="newscard">
+                    <div className='newscard wow animate__animated animate__zoomIn' data-wow-duration="1s" data-wow-delay="1s">
                         <div className="newscardimg">
                             <img src="\assets\cardone.svg" alt="innernewsimg" className="innernewsimg" />
                         </div>
@@ -21,7 +22,7 @@ const News = () => {
                             </h6>
                         </div>
                     </div>
-                    <div className="newscard">
+                    <div className='newscard wow animate__animated animate__zoomIn' data-wow-duration="1s" data-wow-delay="1s">
                         <div className="newscardimg">
                             <img src="\assets\cardtwo.svg" alt="innernewsimg" className="innernewsimg" />
                         </div>
@@ -36,7 +37,7 @@ const News = () => {
                             </h6>
                         </div>
                     </div>
-                    <div className="newscard">
+                    <div className='newscard wow animate__animated animate__zoomIn' data-wow-duration="1s" data-wow-delay="1s">
                         <div className="newscardimg">
                             <img src="\assets\cardthree.svg" alt="innernewsimg" className="innernewsimg" />
                         </div>
