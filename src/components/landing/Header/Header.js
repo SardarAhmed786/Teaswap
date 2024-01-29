@@ -1,129 +1,109 @@
-import "./header.scss";
-import { Link } from "react-router-dom";
-import Modal from "react-bootstrap/Modal";
-import { useState, useEffect } from "react";
+import React from 'react'
+import { useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import './header.scss'
 
-import Offcanvas from 'react-bootstrap/Offcanvas';
-
-const Header = ({ show, setShow }) => {
-  const [showModal, setShowModal] = useState(false);
-  const [showOffcanvas, setShowOffcanvas] = useState(false);
-
-  const handleClose = () => {
-    setShow(false);
-    setShowModal(false);
-    setShowOffcanvas(false);
-  };
-
-  const handleShow = () => {
-    setShow(true);
-    setShowModal(true);
-    setShowOffcanvas(true);
-  };
-
-
+const Header = () => {
+  const { hash } = useLocation();
+  const isActive = (iHash) => hash === iHash;
 
   return (
     <>
       <section className="main-navbar">
-        <div className="custom-container">
-          <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="/"><img src="\logo.svg" alt="img" className='img-fluid' /></a>
+        <div class="custom-container">
+          <nav class="navbar navbar-expand-xl">
+            <a class="navbar-brand" href="/"><img src="\logo.svg" alt="logo" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M5 17H13M5 12H19M11 7H19" stroke="#53FFEA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+              <span><img src="\assets\menu.svg" alt="img" className="img-fluid" /></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="navbar-nav navbar-navvvvv  me-0 mb-2 mb-lg-0">
-
+            <div class="collapse navbar-collapse mobile-none" id="navbarSupportedContent">
+              <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active for-a" aria-current="page" href="#home">Home</a>
+                  <HashLink to="#home" class="nav-link" style={
+                    isActive("#home")
+                      ? {
+                        color: "#F40080",
+                      }
+                      : {}
+                  }> <a>Home</a></HashLink>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link for-a" href="#about">About</a>
+                  <HashLink to="#about" class="nav-link" style={
+                    isActive("#about")
+                      ? {
+                        color: "#F40080"
+                      }
+                      : {}
+                  }><a >About</a></HashLink>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link for-a" href="#partners">Features</a>
+                  <HashLink to="#features" class="nav-link" style={
+                    isActive("#features")
+                      ? {
+                        color: "#F40080"
+                      }
+                      : {}
+                  }> <a>Features</a></HashLink>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link for-a" href="#tokenomics">How It Works</a>
+                  <HashLink class="nav-link" to="#how" style={
+                    isActive("#how")
+                      ? {
+                        color: "#F40080"
+                      }
+                      : {}
+                  }><a>How It Works</a></HashLink>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link for-a" href="#roadmap">Tokenomics</a>
+                  <HashLink class="nav-link" to="#tokenomics" style={
+                    isActive("#tokenomics")
+                      ? {
+                        color: "#F40080"
+                      }
+                      : {}
+                  }> <a >Tokenomics</a></HashLink>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link for-a" href="#roadmap">Community</a>
+                  <HashLink class="nav-link" to="#community" style={
+                    isActive("#community")
+                      ? {
+                        color: "#F40080"
+                      }
+                      : {}
+                  }> <a >Community</a></HashLink>
                 </li>
-             
-
-
-
               </ul>
-              <ul class="navbar-nav navbar-navv d-none me-0 mb-2 mb-lg-0">
-                <li class="nav-item forsocial">
-                  <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M15.2033 1.875H17.96L11.9375 8.75833L19.0225 18.125H13.475L9.13 12.4442L4.15833 18.125H1.4L7.84167 10.7625L1.045 1.875H6.73333L10.6608 7.0675L15.2033 1.875ZM14.2358 16.475H15.7633L5.90333 3.43833H4.26417L14.2358 16.475Z" fill="#F0FF40" />
-                  </svg></a>
-                  <a class="nav-link active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M14.5749 7.09689C15.1883 6.50241 15.7972 5.11529 13.2415 6.79965C10.854 8.39212 8.45037 9.96168 6.03089 11.5081C5.66246 11.6696 5.26416 11.7572 4.85991 11.7657C4.45565 11.7742 4.0538 11.7034 3.67848 11.5576C2.14502 11.1118 0.354872 10.5173 0.354872 10.5173C0.354872 10.5173 -0.86745 9.77313 1.22494 8.98049C1.22494 8.98049 10.0712 5.46207 13.1393 4.2225C14.3149 3.7271 18.303 2.14182 18.303 2.14182C18.303 2.14182 20.1443 1.44718 19.9909 3.13262C19.9398 3.82618 19.5309 6.25579 19.122 8.88141C18.5075 12.598 17.843 16.6624 17.843 16.6624C17.843 16.6624 17.7407 17.8018 16.8718 18C15.9416 17.9847 15.0428 17.6712 14.316 17.1083C14.1116 16.9597 10.4813 14.7293 9.15115 13.6394C9.01585 13.5506 8.90592 13.43 8.83161 13.289C8.75729 13.1479 8.72099 12.9909 8.7261 12.8326C8.7312 12.6743 8.77753 12.5198 8.86078 12.3835C8.94404 12.2472 9.06151 12.1335 9.20226 12.053C11.0266 10.4354 12.8178 8.783 14.5749 7.09689Z" fill="#F0FF40" />
-                  </svg></a>
-                </li>
-                <li class="nav-item">
-                  <Link to="/whitelist" class="nav-link active for-a" aria-current="page" >WHITELIST</Link>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link connect-wallet" aria-current="page" href="#">Connect Wallet</a>
-                </li>
-
-
-
-
-              </ul>
-              <button className="connect-btn" onClick={handleShow}>
-                sign in
-              </button>
-
+              <div class="d-flex">
+                <div className="icons">
+                  <a href='' target='_blank' className="socialiconlink">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M12.6 4.43344H14.1667V1.78344C13.4081 1.70456 12.646 1.66562 11.8833 1.66677C9.61666 1.66677 8.06666 3.05011 8.06666 5.58344V7.76677H5.50833V10.7334H8.06666V18.3334H11.1333V10.7334H13.6833L14.0667 7.76677H11.1333V5.87511C11.1333 5.00011 11.3667 4.43344 12.6 4.43344Z" fill="white" fill-opacity="0.6" />
+                    </svg>
+                  </a>
+                  <a href='' target='_blank' className="socialiconlink">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M18.3334 4.83326C17.707 5.10501 17.0445 5.28465 16.3667 5.3666C17.0818 4.93936 17.6177 4.26725 17.875 3.47493C17.203 3.87498 16.4673 4.15684 15.7 4.30826C15.1871 3.75207 14.5042 3.38184 13.7582 3.25564C13.0122 3.12944 12.2455 3.2544 11.5782 3.61092C10.9109 3.96745 10.3808 4.53537 10.0711 5.22563C9.76131 5.91588 9.68943 6.68942 9.86669 7.42493C8.50788 7.3562 7.17872 7.00239 5.96557 6.38648C4.75241 5.77057 3.68239 4.90634 2.82502 3.84993C2.5243 4.37507 2.36629 4.96978 2.36669 5.57493C2.36562 6.13692 2.50353 6.69044 2.76815 7.18623C3.03276 7.68202 3.41587 8.10469 3.88335 8.4166C3.34 8.40181 2.80826 8.25601 2.33335 7.9916V8.03326C2.33743 8.82067 2.61335 9.58251 3.11445 10.1899C3.61555 10.7973 4.31107 11.213 5.08335 11.3666C4.78607 11.4571 4.47742 11.5048 4.16669 11.5083C3.9516 11.5058 3.73704 11.4862 3.52502 11.4499C3.74495 12.1273 4.17054 12.7192 4.74258 13.1434C5.31463 13.5676 6.00467 13.8029 6.71669 13.8166C5.51436 14.7627 4.02992 15.279 2.50002 15.2833C2.22147 15.2842 1.94313 15.2675 1.66669 15.2333C3.22871 16.2418 5.04903 16.7772 6.90835 16.7749C8.19143 16.7883 9.4643 16.5458 10.6526 16.0617C11.8409 15.5775 12.9209 14.8615 13.8294 13.9553C14.7378 13.0492 15.4567 11.9711 15.9438 10.784C16.431 9.59695 16.6767 8.3247 16.6667 7.0416C16.6667 6.89993 16.6667 6.74993 16.6667 6.59993C17.3206 6.11227 17.8846 5.51445 18.3334 4.83326Z" fill="white" fill-opacity="0.6" />
+                    </svg>
+                  </a>
+                  <a href='' target='_blank' className="socialiconlink">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path d="M11.9886 8.01126C13.087 9.10961 13.087 10.8904 11.9886 11.9887C10.8903 13.0871 9.10948 13.0871 8.01114 11.9887C6.91279 10.8904 6.91279 9.10961 8.01114 8.01126C9.10948 6.91291 10.8903 6.91291 11.9886 8.01126Z" fill="white" fill-opacity="0.6" />
+                      <path d="M13.2812 2.5H6.71875C4.39239 2.5 2.5 4.39239 2.5 6.71875V13.2812C2.5 15.6076 4.39239 17.5 6.71875 17.5H13.2812C15.6076 17.5 17.5 15.6076 17.5 13.2812V6.71875C17.5 4.39239 15.6076 2.5 13.2812 2.5ZM10 13.75C7.93228 13.75 6.25 12.0682 6.25 10C6.25 7.93183 7.93228 6.25 10 6.25C12.0677 6.25 13.75 7.93183 13.75 10C13.75 12.0682 12.0677 13.75 10 13.75ZM14.2188 6.25C13.9599 6.25 13.75 6.04012 13.75 5.78125C13.75 5.52233 13.9599 5.3125 14.2188 5.3125C14.4776 5.3125 14.6875 5.52233 14.6875 5.78125C14.6875 6.04012 14.4776 6.25 14.2188 6.25Z" fill="white" fill-opacity="0.6" />
+                    </svg>
+                  </a>
+                  <a href='' target='_blank' className="socialiconlink">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                      <path d="M1.25 3.28283C1.25 2.69359 1.46115 2.20748 1.88345 1.82449C2.30574 1.44149 2.85474 1.25 3.53041 1.25C4.19402 1.25 4.73093 1.43854 5.14117 1.81566C5.56346 2.20455 5.77461 2.71127 5.77461 3.33586C5.77461 3.90152 5.5695 4.37288 5.15927 4.75C4.73697 5.13889 4.18195 5.33333 3.49421 5.33333H3.47611C2.81249 5.33333 2.27559 5.13889 1.86535 4.75C1.45511 4.36111 1.25 3.87205 1.25 3.28283ZM1.48528 18.75V6.94192H5.50314V18.75H1.48528ZM7.72925 18.75H11.7471V12.1566C11.7471 11.7441 11.7954 11.4259 11.8919 11.202C12.0608 10.8013 12.3172 10.4625 12.6611 10.1856C13.0049 9.90866 13.4363 9.7702 13.9551 9.7702C15.3065 9.7702 15.9821 10.6599 15.9821 12.4394V18.75H20V11.9798C20 10.2357 19.5777 8.91288 18.7331 8.01136C17.8885 7.10985 16.7724 6.65909 15.3849 6.65909C13.8284 6.65909 12.6158 7.31313 11.7471 8.62121V8.65657H11.729L11.7471 8.62121V6.94192H7.72925C7.75337 7.31902 7.76544 8.49157 7.76544 10.4596C7.76544 12.4276 7.75337 15.1911 7.72925 18.75Z" fill="white" fill-opacity="0.6" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </nav>
         </div>
       </section>
-
-
-      <Modal className="connectwallet-modal" show={show}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Connect Wallet</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <div className="twice-btns" >
-            <button className="forhideee">
-              <img src="\assets\metamask.svg" alt="img" className="img-fluid" />
-              <h6>Metamask</h6>
-            </button>
-
-            <button >
-              <img
-                src="\assets\walletconnect.svg"
-                alt="img"
-                className="img-fluid"
-              />
-              <h6>WalletConnect</h6>
-            </button>
-
-            {/* } */}
-
-          </div>
-
-        </Modal.Body>
-
-      </Modal>
-
-
     </>
   );
 };
 
-export default Header;
+export default Header

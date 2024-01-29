@@ -5,10 +5,11 @@ import "./banner.scss";
 const Banner = () => {
   return (
     <>
-      <section className="mainbanner">
-        <div className="right"></div>
-        <div className="left"></div>
-        <img src="\assets\bottomimg.svg" alt="img" className="img-fluid bottom"/>
+      <section className="mainbanner" id="home">
+        <span className="rightshade"></span>
+        <span className="leftshade"></span>
+        <span className="rightshadebannerimg"></span>
+        <img src="\assets\bottomimg.png" alt="img" className="bottom" />
         <img src="\assets\bannerimg.svg" className="img-fluid bannerimg" />
         <div className="custom-container">
           <div className="mainparent">

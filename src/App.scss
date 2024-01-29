@@ -1,13 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: m100;
+  src: url(../src/Font/Mona-Sans-UltraLight.ttf);
+}
+@font-face {
+  font-family: m200;
+  src: url(../src/Font/Mona-Sans-Light.ttf);
+}
+@font-face {
+  font-family: m400;
+  src: url(../src/Font/Mona-Sans-Medium.ttf);
+}
+@font-face {
+  font-family: m300;
+  src: url(../src/Font/Mona-Sans-Regular.ttf);
+}
+@font-face {
+  font-family: m500;
+  src: url(../src/Font/Mona-Sans-SemiBold.ttf);
+}
+@font-face {
+  font-family: m600;
+  src: url(../src/Font/Mona-Sans-Bold.ttf);
+}
+@font-face {
+  font-family: m700;
+  src: url(../src/Font/Mona-Sans-ExtraBold.ttf);
+}
+@font-face {
+  font-family: m800;
+  src: url(../src/Font/Mona-Sans-Black.ttf);
+}
 html {
   scroll-behavior: smooth;
 }
 
+.mainlandang{
+  overflow: hidden;
+}
+
 body {
   background: #060004;
-  height: 100vh;
-
-  font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
 }
 
 .custom-container {

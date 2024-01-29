@@ -1,0 +1,90 @@
+.defi {
+    background: url('../../../assets/defibg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 432px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 90px;
+    border-radius: 20px;
+    margin: 90px 0px;
+
+    .defileft {
+        max-width: 542px;
+        width: 100%;
+
+        .defihead {
+            color: #FFF;
+            font-family: "m500";
+            font-size: 42px;
+            font-style: normal;
+            line-height: 120%;
+            margin-bottom: 30px;
+        }
+
+        .defipara {
+            color: rgba(255, 255, 255, 0.80);
+            font-family: "m300";
+            font-size: 18px;
+            font-style: normal;
+            line-height: 120%;
+            margin-bottom: 40px;
+        }
+
+        .defibtn {
+            border-radius: 12px;
+            background: #FFF;
+            display: flex;
+            padding: 15px 25px;
+            justify-content: center;
+            align-items: center;
+            color: #F40080;
+            font-family: "m400";
+            font-size: 16px;
+            font-style: normal;
+            line-height: normal;
+            text-transform: uppercase;
+            border: none;
+        }
+    }
+}
+
+@media(max-width:1200px){
+    .defi{
+        height: 500px;
+    }
+}
+
+@media (max-width:992px){
+    .defi{
+        flex-direction: column;
+        height: unset;
+    }
+    .defi .defileft{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:600px){
+    .defi{
+        padding: 30px 20px;
+        margin: 50px 0px;
+    }
+    .defi .defileft .defihead{
+        font-size: 22px;
+    }
+    .defi .defileft .defipara{
+        font-size: 16px;
+    }
+    .defi .defileft .defibtn{
+        font-size: 14px;
+    }
+}

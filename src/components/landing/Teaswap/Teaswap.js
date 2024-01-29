@@ -4,10 +4,12 @@ const Teaswap = () => {
     return (
         <>
             <section className='tea'>
-
+                <img src='\assets\leftflowermain.png' alt='img' className='leftimg'></img>
+                <img src='\assets\rightflowermain.png' alt='img' className='rightimg'></img>
+                <span className="leftshadetea"></span>
+                <span className="rightshadetea"></span>
+                <span className="extrashaderight"></span>
                 <div className='custom-container'>
-                <img src='\assets\leftflower.svg' alt='img' className='leftimg'></img>
-                <img src='\assets\rightflower.svg' alt='img' className='rightimg'></img>
                     <div className='maincard'>
                         <div className='upperparent'>
                             <p>TEA Price</p>
@@ -33,7 +35,7 @@ const Teaswap = () => {
                             </div>
                         </div>
                         <div className='mainimage'>
-                            <img src='\assets\swap.svg' alt='img' className='imgf-fluid map'/>
+                            <img src='\assets\graph.svg' alt='img' className='img-fluid ' />
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,99 @@
+.newsmain {
+    padding: 60px 0px 110px;
+
+    .innernews {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+
+        .newscard {
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.02);
+            background: rgba(255, 255, 255, 0.02);
+            padding: 12px;
+            cursor: pointer;
+
+            .newscardimg {
+                border-radius: 8px;
+                background: #FFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 234px;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                margin-bottom: 20px;
+
+                .innernewsimg {
+                    border-radius: 8px;
+                    background: #FFF;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .newscardhead {
+                color: #FFF;
+                font-family: "m400";
+                font-size: 18px;
+                font-style: normal;
+                line-height: 130%;
+                margin-bottom: 11px;
+            }
+
+            .newscardpara {
+                color: rgba(255, 255, 255, 0.45);
+                font-family: "m300";
+                font-size: 16px;
+                font-style: normal;
+                line-height: 130%;
+                margin-bottom: 20px;
+            }
+
+            .newscardbottom {
+                padding-top: 20px;
+                border-top: 1px solid #180C14;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .newsleftpara {
+                    color: rgba(255, 255, 255, 0.45);
+                    font-family: "m300";
+                    font-size: 16px;
+                    font-style: normal;
+                    line-height: normal;
+                }
+
+                .newsrighthead {
+                    display: flex;
+                    align-items: center;
+                    color: #FFF;
+                    gap: 6px;
+                    font-family: "m300";
+                    font-size: 14px;
+                    font-style: normal;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:992px){
+    .newsmain .innernews{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:600px){
+    .newsmain .innernews{
+        grid-template-columns: 1fr;
+    }
+    .newsmain{
+        padding: 50px 0px;
+    }
+}

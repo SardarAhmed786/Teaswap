@@ -1,52 +1,115 @@
 .decentralized {
     padding-top: 118px;
+    padding-bottom: 97px;
 
-    .topbtn {
-        button {
-            border-radius: 45px;
-            background: rgba(244, 0, 128, 0.10);
-            padding: 10px 20px;
-            color: #F40080;
+    .maindecentralized {
+        display: flex;
+        align-items: center;
+        gap: 109px;
+        justify-content: center;
 
-            text-align: center;
-            font-family: "Mona Sans";
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 120%;
-            max-width: 159px;
-            width: 100%;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-            border: none;
-            white-space: nowrap;
-            margin-bottom: 15px;
-        }
+        .maindecentralizedleft {
+            min-width: 549px;
+            height: 483px;
+            position: relative;
 
-    }
-
-    .heading {
-        h3 {
-            color: #FFF;
-            margin-bottom: 30px;
-            font-family: "Mona Sans";
-            font-size: 50px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 120%;
-        }
-
-        p {
-            color: #9A999F;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 120%;
-            margin-bottom: 15px;
-            &:last-child{
-                margin-bottom: 0px;
+            .decentralizedshade {
+                border-radius: 408px;
+                background: rgba(244, 0, 128, 0.20);
+                filter: blur(65px);
+                width: 408px;
+                height: 408px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -9;
             }
         }
-    }
 
+        .maindecentralizedright {
+            .topbtn {
+                display: flex;
+                padding: 10px 20px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 45px;
+                background: rgba(244, 0, 128, 0.10);
+                color: #F40080;
+                text-align: center;
+                font-family: "m500";
+                font-size: 12px;
+                font-style: normal;
+                line-height: 120%;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                border: none;
+                outline: none;
+            }
+
+            .heading {
+                h3 {
+                    margin-bottom: 30px;
+                    color: #FFF;
+                    font-family: "m500";
+                    font-size: 50px;
+                    font-style: normal;
+                    line-height: 120%;
+                }
+
+                p {
+                    color: #9A999F;
+                    font-family: "m300";
+                    font-size: 18px;
+                    font-style: normal;
+                    line-height: 120%;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width:992px){
+    .decentralized .maindecentralized{
+        flex-direction: column;
+        .maindecentralizedright{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .decentralized .maindecentralized .maindecentralizedleft .decentralizedshade{
+        width: 100%;
+    }
+    .decentralized .maindecentralized .maindecentralizedleft{
+        min-width: 100%;
+        height: 345px;
+        img{
+            width: 100%;
+        }
+    }
+    .decentralized{
+        padding: 50px 0px;
+    }
+    .decentralized .maindecentralized{
+        gap: 0px;
+    }
+    .decentralized .maindecentralized .maindecentralizedright .heading h3{
+        font-size: 22px;
+    }
+    .decentralized .maindecentralized .maindecentralizedright .heading p{
+        font-size: 16px;
+    }
 }
