@@ -11,20 +11,20 @@ const Howitswork = () => {
                     <div className='parentcard'>
                         <div className='mainheading wow animate__animated animate__fadeIn' data-wow-duration="1s" data-wow-delay="1s">
                             <h2>How It Works</h2>
-                            <p>A step-by-step guide on how to use TeaSwap.</p>
+                            <p>TeaSwap, a decentralized exchange, empowers users with full control over their funds. Here’s how it works:</p>
                         </div>
                         <div className='workparent'>
                             <div className='mainstep wow animate__animated animate__zoomIn' data-wow-duration="1s" data-wow-delay="1s">
-                                <h3>Step 01</h3>
-                                <p>Ea dicta illo et aliquid libero cum delectus accusamus! Vel fuga distinctio ut voluptatem eaque sit recusandae tempora qui numquam omnis ratione et voluptatem voluptatem id aliquid labore.</p>
+                                <h3>Decentralized Liquidity</h3>
+                                <p>DEXs like TeaSwap utilize AMMs to provide liquidity through LPs, allowing market makers to offer liquidity based on smart contract conditions, ensuring optimal pricing.</p>
                             </div>
                             <div className='mainstep wow animate__animated animate__zoomIn' data-wow-duration="1s" data-wow-delay="1s">
-                                <h3>Step 02</h3>
-                                <p>Ea officiis atque sed culpa libero ea odit praesentium ea omnis beatae et consequatur omnis. Ad deleniti digniss et ipsa molestiae et modi consequuntur qui error autem sed corporis blanditiis.</p>
+                                <h3>Advantages Over CEXs</h3>
+                                <p>DEXs maintain users' control over funds, unlike centralized exchanges (CEXs) prone to risks like mismanagement or hacks. With DEXs, users hold their own funds, enhancing security and eliminating custodial liabilities.</p>
                             </div>
                             <div className='mainstep wow animate__animated animate__zoomIn' data-wow-duration="1s" data-wow-delay="1s">
-                                <h3>Step 03</h3>
-                                <p>Aut voluptatem iusto eos libero quibusdam id numquam placeat. Non dolores nisi est omnis voluptates est quaerat soluta quo placeat temporibus. Ea soluta deserunt et vero eaque qui magnam ipsa.</p>
+                                <h3>Importance of DEXs</h3>
+                                <p>DEXs are vital for token economics, offering flexibility, configurability, and governance structures. While traditional exchanges lack privacy, TeaSwap, built on the DOP protocol, integrates ZK and privacy features, restoring users' rights to privacy in crypto transactions.</p>
                             </div>
                         </div>
                     </div>

@@ -12,9 +12,9 @@ const Security = () => {
                         </div>
                         <div className='securityright wow animate__animated animate__fadeInRight' data-wow-duration="1s" data-wow-delay="1s">
                             <div className='headss'>
-                                <h2>Security and Trust</h2>
-                                <p>At laborum dolorem qui mollitia consequuntur non laudantium aspernatur aut sint voluptas et vitae nesciunt ea repellendus veritatis sit quibusdam omnis! Vel asperiores ullam aut numquam porro vel debitis aspernatur est dignissimos velit.</p>
-                                <p>Id officiis nihil et nihil laborum vel internos esse et dolorem soluta. Ut accusantium aliquam cum suscipit aspernatur a aspernatur vitae vel nihil cumque.</p>
+                                <h2>Our Security, Your Trust!</h2>
+                                <p>TeaSwap is the first decentralized exchange on the DOP protocol. The DOP protocol blockchain provides zero-knowledge transactions on an EVM blockchain, allowing people to have privacy, while maintaining the security and trustless nature of the blockchain. Additionally, TeaSwap uses a liquidity model akin to UniSwap version 2, ensuring stability and efficiency.</p>
+           
                             </div>
                         </div>
                     </div>
@@ -27,8 +27,8 @@ const Security = () => {
                     <div className='securityright wow animate__animated animate__fadeInLeft' data-wow-duration="1s" data-wow-delay="1s">
                             <div className='headss'>
                                 <h2>Community and Governance</h2>
-                                <p>At laborum dolorem qui mollitia consequuntur non laudantium aspernatur aut sint voluptas et vitae nesciunt ea repellendus veritatis sit quibusdam omnis! Vel asperiores ullam aut numquam porro vel debitis aspernatur est dignissimos velit.</p>
-                                <p>Id officiis nihil et nihil laborum vel internos esse et dolorem soluta. Ut accusantium aliquam cum suscipit aspernatur a aspernatur vitae vel nihil cumque.</p>
+                                <p className='formaxwidth'>TeaSwap launches within the DOP ecosystem with initial governance support, moving towards establishing a DAO for TEA token holders. A future DAO will integrate standard DAO functionality that has proven itself as part of successful decentralized exchanges in the DeFi space.</p>
+                   
                                 <button className="comunitybtn">Join Community</button>
                             </div>
                         </div>

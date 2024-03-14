@@ -40,7 +40,6 @@
             font-size: 18px;
             font-style: normal;
             line-height: 140%;
-            max-width: 580px;
             width: 100%;
         }
     }
@@ -143,6 +142,7 @@
                         justify-content: space-between;
                         width: 201px;
                         margin-bottom: 15px;
+                        gap: 15px;
 
                         &:last-child {
                             margin-bottom: 0px;
@@ -157,6 +157,10 @@
                             font-style: normal;
                             line-height: 120%;
                             gap: 10px;
+                            svg{
+                                min-height: 16px;
+                                min-width: 16px;
+                            }
                         }
 
                         h6 {

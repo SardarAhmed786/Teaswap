@@ -8,14 +8,14 @@ const Bridge = () => {
         <div className="bridgemaincards">
           <div className='bridgecard wow animate__animated animate__fadeInLeft' data-wow-duration="1s" data-wow-delay="1s">
             <img src="\assets\bridgecardone.svg" alt="bridgecardimg" className="bridgecardimg" />
-            <h4 className="bridgecardhead">TeaSwap Bridge</h4>
-            <p className="bridgecardpara">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+            <h4 className="bridgecardhead">Multi-Chain (Wrapped Tokens)</h4>
+            <p className="bridgecardpara">TeaSwap's roadmap includes wrapping capabilities for Ethereum and ERC20 tokens, with plans to expand to other blockchains.</p>
             <button className="bridgebtn">Go To Bridge</button>
           </div>
           <div className='bridgecard wow animate__animated animate__fadeInRight' data-wow-duration="1s" data-wow-delay="1s">
             <img src="\assets\bridgecardtwo.svg" alt="bridgecardimg" className="bridgecardimg" />
-            <h4 className="bridgecardhead">TeaSwap Lottery</h4>
-            <p className="bridgecardpara">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+            <h4 className="bridgecardhead">Compounding Fees</h4>
+            <p className="bridgecardpara">Offering compounding transaction fees, prioritizing financial viability for the chain and token holders.</p>
             <button className="bridgebtn">Go To Swap</button>
           </div>
         </div>

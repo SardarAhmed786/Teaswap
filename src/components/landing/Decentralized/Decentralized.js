@@ -17,11 +17,10 @@ const Decentralized = () => {
                         <div className='maindecentralizedright'>
                             <button className="topbtn wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="1s">About TeaSwap</button>
                             <div className='heading wow animate__animated animate__bounceInRight' data-wow-duration="1s" data-wow-delay="1s">
-                                <h3>Fully decentralized. Completely secure.</h3>
-                                <p>At laborum dolorem qui mollitia consequuntur non laudantium aspernatur aut sint voluptas et vitae nesciunt ea repellendus veritatis sit quibusdam omnis! Vel asperiores ullam aut numquam porro vel debitis aspernatur est dignissimos velit.
+                                <h3>Decentralized and Security at once!
+</h3>
+                                <p>TeaSwap, the DOP protocol's decentralized exchange, facilitates token swaps and wraps on an innovative platform. Our wrap holds tokens securely in smart contracts, offering true decentralization. Explore the TeaSwap difference with our experienced DeFi team.
                                 </p>
-                                <p>
-                                    Id officiis nihil et nihil laborum vel internos esse et dolorem soluta. Ut accusantium aliquam cum suscipit aspernatur a aspernatur vitae vel nihil cumque.</p>
                             </div>
                         </div>
                     </div>

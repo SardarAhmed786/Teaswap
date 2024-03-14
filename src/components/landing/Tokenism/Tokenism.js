@@ -8,7 +8,7 @@ const Tokenism = () => {
                 <div className='custom-container'>
                     <div className='mainheading wow animate__animated animate__fadeIn' data-wow-duration="1s" data-wow-delay="1s">
                         <h3>Tokenomics at a Glance</h3>
-                        <p>At vero eos et accusamus et iEvoluptatum deleniti atque corrupti quos dolores.</p>
+                        <p>Transforming the future, TeaSwap detailed Tokenomics are as under: </p>
                     </div>
                     <div className='parentcardsss'>
                         <div className='left wow animate__animated animate__fadeInLeft' data-wow-duration="1s" data-wow-delay="1s">
@@ -35,6 +35,10 @@ const Tokenism = () => {
                                     <h6>ETH & BNB</h6>
                                 </div>
                                 <div className='parenttext'>
+                                    <p>Exchange Rate:</p>
+                                    <h6>1 ETH = 150,000 TEA</h6>
+                                </div>
+                                <div className='parenttext'>
                                     <p>Hard Cap:</p>
                                     <h6>180,000,000 TEA</h6>
                                 </div>
@@ -57,40 +61,40 @@ const Tokenism = () => {
                                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                                                 <path d="M16.9418 8C16.9418 12.4183 13.3601 16 8.94177 16C4.52349 16 0.941772 12.4183 0.941772 8C0.941772 3.58172 4.52349 0 8.94177 0C13.3601 0 16.9418 3.58172 16.9418 8ZM3.86897 8C3.86897 10.8016 6.14014 13.0728 8.94177 13.0728C11.7434 13.0728 14.0146 10.8016 14.0146 8C14.0146 5.19837 11.7434 2.9272 8.94177 2.9272C6.14014 2.9272 3.86897 5.19837 3.86897 8Z" fill="#F40080" />
                                             </svg>
-                                            Marketing</p>
-                                        <h6>24%</h6>
+                                            Community Sale</p>
+                                        <h6>63%</h6>
                                     </div>
                                     <div className='parenttext'>
                                         <p>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                                                 <path d="M16.9418 8C16.9418 12.4183 13.3601 16 8.94177 16C4.52349 16 0.941772 12.4183 0.941772 8C0.941772 3.58172 4.52349 0 8.94177 0C13.3601 0 16.9418 3.58172 16.9418 8ZM3.86897 8C3.86897 10.8016 6.14014 13.0728 8.94177 13.0728C11.7434 13.0728 14.0146 10.8016 14.0146 8C14.0146 5.19837 11.7434 2.9272 8.94177 2.9272C6.14014 2.9272 3.86897 5.19837 3.86897 8Z" fill="#FF39A1" />
                                             </svg>
-                                            Reserves</p>
-                                        <h6>10%</h6>
+                                            Treasury (including Liquidity Pool funding)</p>
+                                        <h6>12%</h6>
                                     </div>
                                     <div className='parenttext'>
                                         <p>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                                                 <path d="M16.9418 8C16.9418 12.4183 13.3601 16 8.94177 16C4.52349 16 0.941772 12.4183 0.941772 8C0.941772 3.58172 4.52349 0 8.94177 0C13.3601 0 16.9418 3.58172 16.9418 8ZM3.86897 8C3.86897 10.8016 6.14014 13.0728 8.94177 13.0728C11.7434 13.0728 14.0146 10.8016 14.0146 8C14.0146 5.19837 11.7434 2.9272 8.94177 2.9272C6.14014 2.9272 3.86897 5.19837 3.86897 8Z" fill="#FF70BB" />
                                             </svg>
-                                            Team</p>
-                                        <h6>14%</h6>
+                                            Grants / Bounties / Business Development</p>
+                                        <h6>6%</h6>
                                     </div>
                                     <div className='parenttext'>
                                         <p>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                                                 <path d="M16.9418 8C16.9418 12.4183 13.3601 16 8.94177 16C4.52349 16 0.941772 12.4183 0.941772 8C0.941772 3.58172 4.52349 0 8.94177 0C13.3601 0 16.9418 3.58172 16.9418 8ZM3.86897 8C3.86897 10.8016 6.14014 13.0728 8.94177 13.0728C11.7434 13.0728 14.0146 10.8016 14.0146 8C14.0146 5.19837 11.7434 2.9272 8.94177 2.9272C6.14014 2.9272 3.86897 5.19837 3.86897 8Z" fill="#FF8CC8" />
                                             </svg>
-                                            Partners</p>
-                                        <h6>21%</h6>
+                                            Marketing</p>
+                                        <h6>5%</h6>
                                     </div>
                                     <div className='parenttext'>
                                         <p>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                                                 <path d="M16.9418 8C16.9418 12.4183 13.3601 16 8.94177 16C4.52349 16 0.941772 12.4183 0.941772 8C0.941772 3.58172 4.52349 0 8.94177 0C13.3601 0 16.9418 3.58172 16.9418 8ZM3.86897 8C3.86897 10.8016 6.14014 13.0728 8.94177 13.0728C11.7434 13.0728 14.0146 10.8016 14.0146 8C14.0146 5.19837 11.7434 2.9272 8.94177 2.9272C6.14014 2.9272 3.86897 5.19837 3.86897 8Z" fill="#FFC1E2" />
                                             </svg>
-                                            Liquidity</p>
-                                        <h6>31%</h6>
+                                            Team/Founder</p>
+                                        <h6>9%</h6>
                                     </div>
                                 </div>
                             </div>

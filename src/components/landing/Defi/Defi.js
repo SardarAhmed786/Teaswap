@@ -6,8 +6,8 @@ const Defi = () => {
     <div className="custom-container">
         <div className='defi wow animate__animated animate__fadeInUp' data-wow-duration="1s" data-wow-delay="1s">
             <div className="defileft">
-                <h3 className="defihead">Start your DeFi journey on Tomichain with TeaSwa.</h3>
-                <p className="defipara">At laborum dolorem qui mollitia consequuntur non laudantium aspernatur aut sint voluptas et vitae nesciunt ea repellendus veritatis sit quibusdam omnis! Vel asperiores ullam aut numquam porro vel debitis aspernatur est dignissimos velit.</p>
+                <h3 className="defihead">Start your Journey towards a decentralized Revolution, with TeaSwap!</h3>
+                <p className="defipara">Join our community now and be a part of the game-changing revolution waiting your way ahead.</p>
                 <button className="defibtn">Join Community</button>
             </div>
             <img src="\assets\defiimg.svg" alt="defirightimg" className="defirightimg" />
