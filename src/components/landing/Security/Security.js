@@ -29,7 +29,8 @@ const Security = () => {
                                 <h2>Community and Governance</h2>
                                 <p className='formaxwidth'>TeaSwap launches within the DOP ecosystem with initial governance support, moving towards establishing a DAO for TEA token holders. A future DAO will integrate standard DAO functionality that has proven itself as part of successful decentralized exchanges in the DeFi space.</p>
                    
-                                <button className="comunitybtn">Join Community</button>
+                             
+                                <a href="https://t.me/TeaSwap_org" target="_blank" >    <button className="comunitybtn">Join Community</button></a>
                             </div>
                         </div>
                         <div className='securityleft wow animate__animated animate__fadeInRight' data-wow-duration="1s" data-wow-delay="1s">

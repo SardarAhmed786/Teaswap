@@ -36,7 +36,7 @@ function Landing() {
       <Bridge />
       <Partners />
       <Defi />
-      <News />
+      {/* <News /> */}
       <Footer />
       </div>
     </>

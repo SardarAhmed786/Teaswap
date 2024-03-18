@@ -13,25 +13,25 @@ const Teaswap = () => {
                     <div className='maincard wow animate__animated animate__fadeInUp' data-wow-duration="1s" data-wow-delay="1s">
                         <div className='upperparent'>
                             <p>TEA Price</p>
-                            <h4>$1.6775</h4>
-                            <button><img src='\assets\arrow-up.svg' alt='img' className='img-fluid' />2.77%</button>
+                            <h4>Coming Soon</h4>
+                            <button><img src='\assets\arrow-up.svg' alt='img' className='img-fluid' />Coming Soon</button>
                         </div>
                         <div className='parenttext'>
                             <div className='mainheading'>
                                 <p>HOLDERS</p>
-                                <h4>13,383</h4>
+                                <h4>Coming Soon</h4>
                             </div>
                             <div className='mainheading'>
                                 <p>MARKETCAP</p>
-                                <h4>$111,371,841.95</h4>
+                                <h4>Coming Soon</h4>
                             </div>
                             <div className='mainheading'>
                                 <p>VOLUME (24H)</p>
-                                <h4>$15,316,019.85</h4>
+                                <h4>Coming Soon</h4>
                             </div>
                             <div className='mainheading'>
                                 <p>Liquidity</p>
-                                <h4>$2,950,733</h4>
+                                <h4>Coming Soon</h4>
                             </div>
                         </div>
                         <div className='mainimage'>

@@ -8,7 +8,10 @@ const Defi = () => {
             <div className="defileft">
                 <h3 className="defihead">Start your Journey towards a decentralized Revolution, with TeaSwap!</h3>
                 <p className="defipara">Join our community now and be a part of the game-changing revolution waiting your way ahead.</p>
-                <button className="defibtn">Join Community</button>
+      
+
+                <a href="https://t.me/TeaSwap_org" target="_blank" >    <button className="defibtn">Join Community</button></a>
+
             </div>
             <img src="\assets\defiimg.svg" alt="defirightimg" className="defirightimg" />
         </div>
