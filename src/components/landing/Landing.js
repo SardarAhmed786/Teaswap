@@ -34,7 +34,7 @@ function Landing() {
       <Tokenism />
       <Security />
       <Bridge />
-      <Partners />
+      {/* <Partners /> */}
       <Defi />
       {/* <News /> */}
       <Footer />
